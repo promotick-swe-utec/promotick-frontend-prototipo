@@ -38,7 +38,6 @@ const menuItems = [
   { id: "plantillas", label: "Plantillas", icon: FileText },
   { id: "exportar", label: "Exportar", icon: Download },
   { id: "usuarios", label: "Usuarios/Roles", icon: Shield },
-  { id: "auditoria", label: "Auditoría", icon: History },
 ]
 
 export function Sidebar({ currentView, onViewChange, collapsed, onToggleCollapse }: SidebarProps) {

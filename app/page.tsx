@@ -11,7 +11,7 @@ import { RevisionLoteView } from "@/components/admin/views/revision-lote-view"
 import { CatalogoView } from "@/components/admin/views/catalogo-view"
 import { ClientesView } from "@/components/admin/views/clientes-view"
 import { UsuariosView } from "@/components/admin/views/usuarios-view"
-import { MapeoView, PlantillasView, ExportarView, AuditoriaView } from "@/components/admin/views/placeholder-views"
+import { MapeoView, PlantillasView, ExportarView } from "@/components/admin/views/placeholder-views"
 
 export default function AdminPage() {
   const [user, setUser] = useState<User | null>(null)
@@ -50,8 +50,6 @@ export default function AdminPage() {
         return <ExportarView />
       case "usuarios":
         return <UsuariosView />
-      case "auditoria":
-        return <AuditoriaView />
       default:
         return <CatalogoView />
     }
