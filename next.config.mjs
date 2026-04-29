@@ -1,15 +1,16 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
   output: 'export',
+  basePath: isProd ? '/prototipo-promotic' : '',
+  assetPrefix: isProd ? '/prototipo-promotic/' : '',
   typescript: {
     ignoreBuildErrors: true,
   },
   images: {
     unoptimized: true,
   },
-  // If your repository is not at the root (e.g., username.github.io/repo-name), 
-  // you might need to add:
-  // basePath: '/repo-name',
 }
 
 export default nextConfig
